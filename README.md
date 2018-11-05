@@ -4,18 +4,20 @@ This is a skeleton app for people who want to use TypeScript. A Vagrantfile is i
 
 You don't have to use the Vagrantfile if you're fine with installing NodeJS and NPM locally. Feel free to delete it if that's the case.
 
-## Instructions (no VM)
+## Instructions
 
-1. Download NodeJS + NPM: https://nodejs.org/en/download/. Versions shouldn't really matter but we'll use the LTS release throughout this course.
+1. Make sure you have [NodeJS](https://nodejs.org/en/download/) installed (preferably the LTS version). This will also install `npm`.
 2. Open a terminal window (command prompt, git bash, powershell)
 3. Check if NodeJS is installed by typing `node --version` into the terminal. It should print a line with something like `v8.12.0`.
 4. Check if NPM is installed by typing  `npm --version` into the terminal. It should print a line with something like `6.4.1`.
-5. Install TypeScript by typing `npm install -g typescript`. If Windows asks for admin permission, grant it.
-6. Check if TypeScript is installed by typing `tsc --version` into the terminal. It should print a line with something like `Version 3.1.1`.
+5. As an alternative to NPM, you could use the [Yarn](yarnpkg.com) npm client from Google and Facebook (it works slightly better and faster than NPM). Install by running `npm install -g yarn`
+6. Install de dependencies by running `npm install` or `yarn install` from the project directory.
+7. Compile the project by running `npm run build` or `yarn run build`. If you want to run the build script everytime you make changes automatically, you can use `npm run watch` or `yarn run watch`. To check out how this works, you can open the `package.json`.
 7. Open the `tsconfig.json` file in this project.
 8. Search the [TypeScript documentation](https://www.typescriptlang.org/docs/home.html) and try to explain every line in the json file. Don't understand something? That's fine! Just don't copy stuff for the sake of filling up your answers.
 
-## Instructions (VM)
+
+## Using a VM
 
 If you're like me and you dislike NodeJS and NPM piling up heaps of folders on your pc, run TypeScript in a virtual machine!
 

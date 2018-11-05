@@ -14,7 +14,7 @@ class Animal {
         return this.sound;
     }
 }
-let animals = [
+const animals = [
     new Animal('dog', 4, 'woof'),
     new Animal('cat', 4, 'meow')
 ];

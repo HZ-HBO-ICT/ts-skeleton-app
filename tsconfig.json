@@ -1,10 +1,11 @@
 {
     "compilerOptions": {
         "target": "es6",
+        "sourceMap": true,
         "noImplicitAny": true,
-        "preserveConstEnums": true,
+        "noImplicitReturns": true,
         "removeComments": true,
-        "outDir": "build",
+        "out": "build/app.js",
     },
     "include": [
         "src/**/*"

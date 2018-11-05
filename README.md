@@ -33,6 +33,5 @@ If you're like me and you dislike NodeJS and NPM piling up heaps of folders on y
 9. Wait until done. This can take up to 15 minutes, depending on internet and HDD speed. Sometimes the provision will fail because of firewalls. This should mostly be fine, as long as you can see that NodeJS and NPM are installed.
 10. Enter the VM by typing `vagrant ssh`
 11. In the VM, enter the correct folder for your project (default: `cd /code`)
-12. **IMPORTANT**: When you're done in the VM, exit it by typing `exit` and then `vagrant halt` into the terminal. This makes sure the VM shuts down cleanly. If you don't need the VM anymore, type `exit` and then `vagrant destroy`. **Never** close the terminal without shutting down the VM, unless you know what you're doing.
-13. Open the `tsconfig.json` file in this project.
-14. Search the [TypeScript documentation](https://www.typescriptlang.org/docs/home.html) and try to explain every line in the json file. Don't understand something? That's fine! Just don't copy stuff for the sake of filling up your answers.
+12. Proceed from step 6 in the non-VM installation instructions
+13. **IMPORTANT**: When you're done in the VM, exit it by typing `exit` and then `vagrant halt` into the terminal. This makes sure the VM shuts down cleanly. If you don't need the VM anymore, type `exit` and then `vagrant destroy`. **Never** close the terminal without shutting down the VM, unless you know what you're doing.

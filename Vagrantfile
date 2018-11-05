@@ -36,5 +36,10 @@ Vagrant.configure("2") do |config|
     echo ""
     echo ">>>>> Typescript installed <<<<<"
     echo "Typescript version:" $(tsc --version)
+    echo ""
+    echo ">>>>> Installing Yarn <<<<<"
+    echo ""
+    echo ">>>>> Yarn installed <<<<<"
+    echo "Yarn version: " $(yarn --version)
   SHELL
 end

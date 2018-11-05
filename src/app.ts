@@ -1,8 +1,8 @@
 class Animal
 {
-    private name: string
-    private legs: number
-    private sound: string
+    private readonly name: string
+    private readonly legs: number
+    private readonly sound: string
 
     public constructor(name: string, legs: number, sound: string)
     {
@@ -27,7 +27,7 @@ class Animal
     }
 }
 
-let animals = [
+const animals = [
      new Animal('dog', 4, 'woof'),
      new Animal('cat', 4, 'meow')
 ]

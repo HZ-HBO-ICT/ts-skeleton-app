@@ -4,7 +4,7 @@
         "noImplicitAny": true,
         "preserveConstEnums": true,
         "removeComments": true,
-        "outDir": "output",
+        "outDir": "build",
     },
     "include": [
         "src/**/*"

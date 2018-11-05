@@ -19,9 +19,6 @@ Vagrant.configure("2") do |config|
   # Puppet, Chef, Ansible, Salt, and Docker are also available. Please see the
   # documentation for more information about their specific syntax and use.
   config.vm.provision "shell", inline: <<-SHELL
-    echo ">>>>> Updating apt <<<<<"
-    apt-get update
-    echo ""
     echo ">>>>> Installing NodeJS LTS PPA <<<<<"
     curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
     echo ""
@@ -38,6 +35,7 @@ Vagrant.configure("2") do |config|
     echo "Typescript version:" $(tsc --version)
     echo ""
     echo ">>>>> Installing Yarn <<<<<"
+    sudo npm install -g yarn
     echo ""
     echo ">>>>> Yarn installed <<<<<"
     echo "Yarn version: " $(yarn --version)

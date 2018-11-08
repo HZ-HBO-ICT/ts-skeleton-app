@@ -6,6 +6,7 @@
         "noImplicitReturns": true,
         "removeComments": true,
         "out": "build/app.js",
+        "noEmitOnError": true
     },
     "include": [
         "src/**/*"

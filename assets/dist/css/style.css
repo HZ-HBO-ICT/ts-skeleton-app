@@ -1,0 +1,25 @@
+/* @font-face {
+    font-family: 'Minecraft';
+    src: url('../../fonts/Minecraft.ttf') format('ttf');
+}
+
+@import url(https://fonts.googleapis.com/css?family=Lobster); */
+
+/* @font-face {
+    font-family: 'Press Start 2P';
+    src: url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+}
+
+@font-face {
+    font-family: 'Spice Rice';
+    src: url('https://fonts.googleapis.com/css?family=Spicy+Rice');
+} */
+
+@font-face {
+    font-family: 'Minecraft';
+    src: url('../../fonts/Minecraft.ttf') format('truetype');
+}
+
+canvas{
+    background-image: url("../../images/nebula-bg.jpg");
+}

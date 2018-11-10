@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Minecraft';
+    src: url('../fonts/Minecraft.ttf') format('truetype');
+}
+
+canvas{
+    font-family: 'Minecraft';
+    background-image: url("../images/nebula-bg.jpg");
+}

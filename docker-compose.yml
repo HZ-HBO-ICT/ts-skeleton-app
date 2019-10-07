@@ -6,4 +6,3 @@ services:
         image: 'node:12'
         volumes:
             - .:/app
-        command: npm run watch

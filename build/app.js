@@ -19,3 +19,4 @@ const animals = [
     new Animal('cat', 4, 'meow')
 ];
 animals.forEach((animal) => console.log('A %s has %s legs and goes %s!', animal.getName(), animal.getLegs(), animal.getSound()));
+//# sourceMappingURL=app.js.map

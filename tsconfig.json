@@ -5,7 +5,7 @@
         "noImplicitAny": true,
         "noImplicitReturns": true,
         "removeComments": true,
-        "out": "build/app.js",
+        "outFile": "build/app.js",
         "noEmitOnError": true
     },
     "include": [

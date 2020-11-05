@@ -9,8 +9,8 @@ You don't have to use the docker-compose file if you're fine with installing Nod
 1. Clone this repository to your pc
 2. Make sure you have [NodeJS](https://nodejs.org/en/download/) installed (preferably the LTS version). This will also install `npm`.
 3. Open a terminal window (command prompt, git bash, powershell)
-4. Check if NodeJS is installed by typing `node --version` into the terminal. It should print a line with something like `v12.13.0`.
-5. Check if NPM is installed by typing  `npm --version` into the terminal. It should print a line with something like `6.12.0`.
+4. Check if NodeJS is installed by typing `node --version` into the terminal. It should print a line with something like `v14.15.0`.
+5. Check if NPM is installed by typing  `npm --version` into the terminal. It should print a line with something like `6.14.0`.
 6. Install the dependencies by running `npm install` from the project directory.
 7. Compile the project by running `npm run build`. If you want to run the build script everytime you make changes automatically, you can use `npm run watch`. To check out how this works, you can open the `package.json` file and take a look at the `scripts` section.
 8. Open the `tsconfig.json` file in this project.

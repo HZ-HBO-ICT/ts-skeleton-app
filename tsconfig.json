@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-        "target": "es6",
+        "target": "esnext",
         "sourceMap": true,
         "noImplicitAny": true,
         "noImplicitReturns": true,

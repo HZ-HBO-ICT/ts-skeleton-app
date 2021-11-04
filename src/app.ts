@@ -1,42 +1,40 @@
 class Animal
 {
-    private readonly name: string
-    private readonly legs: number
-    private readonly sound: string
+  private readonly name: string;
 
-    public constructor(name: string, legs: number, sound: string)
-    {
-        this.name = name
-        this.legs = legs
-        this.sound = sound
-    }
+  private readonly legs: number;
 
-    public getName(): string
-    {
-        return this.name
-    }
+  private readonly sound: string;
 
-    public getLegs(): number
-    {
-        return this.legs
-    }
+  public constructor(name: string, legs: number, sound: string) {
+    this.name = name;
+    this.legs = legs;
+    this.sound = sound;
+  }
 
-    public getSound(): string
-    {
-        return this.sound
-    }
+  public getName(): string {
+    return this.name;
+  }
+
+  public getLegs(): number {
+    return this.legs;
+  }
+
+  public getSound(): string {
+    return this.sound;
+  }
 }
 
 const animals = [
-     new Animal('dog', 4, 'woof'),
-     new Animal('cat', 4, 'meow')
-]
+  new Animal('dog', 4, 'woof'),
+  new Animal('cat', 4, 'meow'),
+];
 
 animals.forEach(
-    (animal) => console.log(
-        'A %s has %s legs and goes %s!',
-        animal.getName(),
-        animal.getLegs(),
-        animal.getSound()
-    )
-)
+  (animal) => console.log(
+    'A %s has %s legs and goes %s!',
+    animal.getName(),
+    animal.getLegs(),
+    animal.getSound(),
+  ),
+);

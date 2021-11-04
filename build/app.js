@@ -1,4 +1,7 @@
 class Animal {
+    name;
+    legs;
+    sound;
     constructor(name, legs, sound) {
         this.name = name;
         this.legs = legs;
@@ -16,7 +19,7 @@ class Animal {
 }
 const animals = [
     new Animal('dog', 4, 'woof'),
-    new Animal('cat', 4, 'meow')
+    new Animal('cat', 4, 'meow'),
 ];
 animals.forEach((animal) => console.log('A %s has %s legs and goes %s!', animal.getName(), animal.getLegs(), animal.getSound()));
 //# sourceMappingURL=app.js.map

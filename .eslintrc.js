@@ -43,9 +43,12 @@ module.exports = {
         'selector': 'default',
         'format': ['camelCase']
       },
-  
       {
         'selector': 'variable',
+        'format': ['camelCase', 'UPPER_CASE']
+      },
+      {
+        'selector': 'classProperty',
         'format': ['camelCase', 'UPPER_CASE']
       },
       {
@@ -53,13 +56,11 @@ module.exports = {
         'format': ['camelCase'],
         'leadingUnderscore': 'allow'
       },
-  
       {
         'selector': 'memberLike',
         'modifiers': ['private'],
         'format': ['camelCase']
       },
-  
       {
         'selector': 'typeLike',
         'format': ['PascalCase']

@@ -38,6 +38,7 @@ module.exports = {
       } 
     ],
     'camelcase': 'off',
+    '@typescript-eslint/triple-slash-reference': 0,
     '@typescript-eslint/naming-convention': [
       'error',
       {

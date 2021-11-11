@@ -30,7 +30,7 @@ module.exports = {
       }
     ],
     'jsdoc/require-param-type': 0,
-    'jsdoc/require-return-type': 0,
+    'jsdoc/require-returns-type': 0,
     'jsdoc/no-types': [
       'warn',
       {

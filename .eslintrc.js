@@ -17,11 +17,13 @@ module.exports = {
   },
   rules: {
     'no-console': 0,
+    'no-plusplus': ["error", { "allowForLoopAfterthoughts": true }],
+    'linebreak-style': 0,
     'jsdoc/require-jsdoc': [
       'error', 
       {
         'contexts': [
-          'MethodDefinition:not([accessibility="private"])'
+          'MethodDefinition:not([accessibility="private"],[kind="get"],[kind="set"])',
         ],
         'require': {
           'ClassDeclaration': false,
@@ -39,6 +41,8 @@ module.exports = {
     ],
     'camelcase': 'off',
     '@typescript-eslint/triple-slash-reference': 0,
+    '@typescript-eslint/no-explicit-any': 'error',
+    '@typescript-eslint/no-inferrable-types': 0,
     '@typescript-eslint/naming-convention': [
       'error',
       {
@@ -67,6 +71,6 @@ module.exports = {
         'selector': 'typeLike',
         'format': ['PascalCase']
       }
-    ]  
+    ],
   }
 };

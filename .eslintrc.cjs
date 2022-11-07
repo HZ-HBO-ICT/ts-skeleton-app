@@ -13,17 +13,20 @@ module.exports = {
     'plugin:jsdoc/recommended'
   ],
   parserOptions: {
-      project: './tsconfig.json',
+    project: './tsconfig.json',
   },
   rules: {
-    'no-console': 0,
+    'camelcase': 'off',
+    'no-console': 'off',
+    'linebreak-style': 'off',
     'no-plusplus': ["error", { "allowForLoopAfterthoughts": true }],
-    'linebreak-style': 0,
     'jsdoc/require-jsdoc': [
-      'error', 
+      'error',
       {
+        'publicOnly': true,
+        'checkConstructors': false,
         'contexts': [
-          'MethodDefinition:not([accessibility="private"],[kind="get"],[kind="set"])',
+          'MethodDefinition[key.name!=/get.*/][key.name!=/set.*/]',
         ],
         'require': {
           'ClassDeclaration': false,
@@ -31,18 +34,23 @@ module.exports = {
         },
       }
     ],
-    'jsdoc/require-param-type': 0,
-    'jsdoc/require-returns-type': 0,
+    'jsdoc/require-param-type': 'off',
+    'jsdoc/require-returns-type': 'off',
     'jsdoc/no-types': [
       'warn',
       {
         'contexts': ['any']
-      } 
+      }
     ],
-    'camelcase': 'off',
-    '@typescript-eslint/triple-slash-reference': 0,
+    '@typescript-eslint/explicit-member-accessibility': [
+      'error',
+      {
+        'accessibility': 'explicit',
+      }
+    ],
     '@typescript-eslint/no-explicit-any': 'error',
-    '@typescript-eslint/no-inferrable-types': 0,
+    '@typescript-eslint/no-inferrable-types': 'off',
+    '@typescript-eslint/triple-slash-reference': 'off',
     '@typescript-eslint/naming-convention': [
       'error',
       {

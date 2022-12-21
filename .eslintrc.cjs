@@ -19,9 +19,14 @@ module.exports = {
     'camelcase': 'off',
     'no-console': 'off',
     'linebreak-style': 'off',
-    'no-plusplus': ["error", { "allowForLoopAfterthoughts": true }],
+    'no-empty': 'warn',
+    'no-multiple-empty-lines': 'warn',
+    'max-len': 'warn',
+    'no-plusplus': ["warn", { "allowForLoopAfterthoughts": true }],
+    'no-trailing-spaces': ["warn", { "ignoreComments": true }],
+    'padded-blocks': "warn",
     'jsdoc/require-jsdoc': [
-      'error',
+      'warn',
       {
         'publicOnly': true,
         'checkConstructors': false,
@@ -49,10 +54,12 @@ module.exports = {
       }
     ],
     '@typescript-eslint/no-explicit-any': 'error',
+    '@typescript-eslint/explicit-member-accessibility': 'error',
+    '@typescript-eslint/explicit-function-return-type': 'error',
     '@typescript-eslint/no-inferrable-types': 'off',
     '@typescript-eslint/triple-slash-reference': 'off',
     '@typescript-eslint/naming-convention': [
-      'error',
+      'warn',
       {
         'selector': 'default',
         'format': ['camelCase']

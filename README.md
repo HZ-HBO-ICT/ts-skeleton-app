@@ -15,7 +15,7 @@ You don't have to use the docker-compose file if you're fine with installing Nod
 6. Install the dependencies by running `npm install`.
 7. Compile the project by running `npm run build`. If you want to run the build script everytime you make changes automatically, you can use `npm run watch`.
 8. Open the `tsconfig.json` file in this project.
-9. Look through the [TypeScript documentation](https://www.typescriptlang.org/docs/home.html) and try to explain what every line in the `package.json` file means. Don't understand something? That's fine! Just don't copy stuff for the sake of filling up your answers.
+9. Look through the [TypeScript documentation](https://www.typescriptlang.org/docs/home.html) and try to explain what every line in the `tsconfig.json` file means. Don't understand something? That's fine! Just don't copy stuff for the sake of filling up your answers.
 10. Install the [EditorConfig](https://editorconfig.org/#download) plugin in your code editor by either using its marketplace or manually installing it.
 11. Install the [ESLint Plugin](https://eslint.org/docs/user-guide/integrations) in your code editor by either using its marketplace or manually installing it.
 12. Run the application. You cannot just open the `index.html` file (see the following section). If everything worked properly, you should see "Hello World" printed to the document. 

@@ -4,27 +4,30 @@ This is a skeleton app for people who want to use TypeScript. A docker-compose f
 
 You don't have to use the docker-compose file if you're fine with installing NodeJS and NPM locally. Feel free to delete it if that's the case.
 
+## Prerequisites
+Make sure you have [NodeJS](https://nodejs.org/en/download/) installed (preferably the LTS version). This will also install `npm`.
+
+1. Open a terminal window (command prompt, git bash, powershell)
+2. Check if NodeJS is installed by typing `node --version` into the terminal. It should print a line with something like `v18.18.0`.
+3. Check if NPM is installed by typing  `npm --version` into the terminal. It should print a line with something like `9.8.0`.
+
 ## Instructions
 
-1. Clone this repository to your computer
-2. Make sure you have [NodeJS](https://nodejs.org/en/download/) installed (preferably the LTS version). This will also install `npm`.
-3. Open a terminal window (command prompt, git bash, powershell)
-4. Check if NodeJS is installed by typing `node --version` into the terminal. It should print a line with something like `v18.12.0`.
-5. Check if NPM is installed by typing  `npm --version` into the terminal. It should print a line with something like `8.19.0`.
-6. Open a terminal in the project directory.
-6. Install the dependencies by running `npm install`.
-7. Compile the project by running `npm run build`. If you want to run the build script everytime you make changes automatically, you can use `npm run watch`.
-8. Open the `tsconfig.json` file in this project.
-9. Look through the [TypeScript documentation](https://www.typescriptlang.org/docs/home.html) and try to explain what every line in the `tsconfig.json` file means. Don't understand something? That's fine! Just don't copy stuff for the sake of filling up your answers.
-10. Install the [EditorConfig](https://editorconfig.org/#download) plugin in your code editor by either using its marketplace or manually installing it.
-11. Install the [ESLint Plugin](https://eslint.org/docs/user-guide/integrations) in your code editor by either using its marketplace or manually installing it.
-12. Run the application. You cannot just open the `index.html` file (see the following section). If everything worked properly, you should see "Hello World" printed to the document. 
+1. Clone or download this repository to your computer
+2. Open a terminal in the project directory.
+3. Install the dependencies by running `npm install`.
+4. Compile the project by running `npm run build`. If you want to run the build script everytime you make changes automatically, you can use `npm run watch`.
+5. Run the application. You cannot just open the `index.html` file (see the following section). If everything worked properly, you should see "Hello World" printed to the document. 
 
-## Webserver
+### Webserver
 
 Applications built with es6 (and higher) modules must be run on a webserver. On Visual Studio Code, [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) is recommended. Otherwise [XAMPP](https://www.apachefriends.org/index.html) or [MAMP](https://www.mamp.info/) can be used.
 
 An example `index.html` is provided. **You cannot load the index.html from your filesystem. It will not work!**
+
+## Recommended VS Code Extension
+ - To use the provided `.editorconfig` file, install the [EditorConfig](https://editorconfig.org/#download) plugin.
+ - To use the provided `.eslintrc.cjs` file, install the [ESLint](https://eslint.org/docs/user-guide/integrations) plugin.
 
 ## Using Docker
 

@@ -25,6 +25,7 @@ module.exports = {
     'no-plusplus': ["warn", { "allowForLoopAfterthoughts": true }],
     'no-trailing-spaces': ["warn", { "ignoreComments": true }],
     'padded-blocks': "warn",
+    'jsdoc/tag-lines': 'off',
     'jsdoc/require-jsdoc': [
       'warn',
       {
@@ -81,6 +82,10 @@ module.exports = {
         'selector': 'memberLike',
         'modifiers': ['private'],
         'format': ['camelCase']
+      },
+      {
+        'selector': 'import',
+        'format': ['camelCase', 'PascalCase'],
       },
       {
         'selector': 'typeLike',

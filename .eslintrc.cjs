@@ -37,9 +37,9 @@ module.exports = {
     "no-multiple-empty-lines": [
       "warn",
       {
-        "max": 1,
-        "maxBOF": 0,
-        "maxEOF": 0
+        "max": 2,
+        "maxBOF": 1,
+        "maxEOF": 1
       }
     ],
     "no-multi-spaces": "warn",
@@ -60,7 +60,6 @@ module.exports = {
     "@typescript-eslint/no-useless-constructor": "warn",
     "lines-between-class-members": "off",
     "@typescript-eslint/lines-between-class-members": "warn",
-
 
     // Code Quality
     "no-console": "off",
@@ -110,6 +109,15 @@ module.exports = {
         "format": ["camelCase"]
       },
       {
+        "selector": "memberLike",
+        "modifiers": ["private"],
+        "format": ["camelCase"]
+      },
+      {
+        "selector": "typeLike",
+        "format": ["PascalCase"]
+      },
+      {
         "selector": "variable",
         "format": ["camelCase", "UPPER_CASE"]
       },
@@ -124,17 +132,8 @@ module.exports = {
         "leadingUnderscore": "allow"
       },
       {
-        "selector": "memberLike",
-        "modifiers": ["private"],
-        "format": ["camelCase"]
-      },
-      {
         "selector": "import",
         "format": ["PascalCase"],
-      },
-      {
-        "selector": "typeLike",
-        "format": ["PascalCase"]
       },
       {
         "selector": "enumMember",

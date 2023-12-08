@@ -1,0 +1,8 @@
+{
+	// List of extensions which should be recommended for users
+	"recommendations": [
+		"dbaeumer.vscode-eslint",
+		"editorconfig.editorconfig",
+		"ritwickdey.liveserver"
+	]
+}
